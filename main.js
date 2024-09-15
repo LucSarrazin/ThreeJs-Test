@@ -58,9 +58,9 @@ const spaceTexture = new THREE.TextureLoader().load('Starfield5.png');
 scene.background = spaceTexture;
 
 DodecahedronGeometry.position.z = -30;
-DodecahedronGeometry.position.setX(-30);
+DodecahedronGeometry.position.setX(-15);
 torus.position.z = -30;
-torus.position.setX(-30);
+torus.position.setX(-15);
 
 function moveCamera(){
     const t = document.body.getBoundingClientRect().top;
@@ -74,7 +74,7 @@ function moveCamera(){
     DodecahedronGeometry.rotation.y += 0.002;
     DodecahedronGeometry.rotation.z += 0.03;
 
-    camera.position.z = t * 0.01;
+    camera.position.z = t * -0.01;
     //camera.position.x = t * -0.0002;
     //camera.rotation.y = t * -0.0002;
 }
